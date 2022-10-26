@@ -1,251 +1,137 @@
 export const userData = [
     {
-      name: "Jan",
+      month: "Jan",
       "active": 4000,
     },
     {
-      name: "Feb",
+      month: "Feb",
       "active": 3000,
     },
     {
-      name: "Mar",
+      month: "Mar",
       "active": 2000,
     },
     {
-      name: "Apr",
+      month: "Apr",
       "active": 8000,
     },
     {
-      name: "May",
+      month: "May",
       "active": 3000,
     },
     {
-      name: "Jun",
+      month: "Jun",
       "active": 2000,
     },
     {
-      name: "Jul",
+      month: "Jul",
       "active": 4000,
     },
     {
-      name: "Agu",
+      month: "Agu",
       "active": 3000,
     },
     {
-      name: "Sep",
+      month: "Sep",
       "active": 5000,
     },
     {
-      name: "Oct",
+      month: "Oct",
       "active": 3000,
     },
     {
-      name: "Nov",
+      month: "Nov",
       "active": 4000,
     },
     {
-      name: "Dec",
+      month: "Dec",
       "active": 1000,
     },
   ];
 
-  export const productData = [
+  export const tasksData = [
     {
-      name: "Jan",
-      "Sales": 4000,
+      month: "Jan",
+      total_tasks: 1500,
+      completed: 1100,
+      inprogress: 400,
+      earnings: "12K"
     },
     {
-      name: "Feb",
-      "Sales": 3000,
+      month: "Feb",
+      total_tasks: 1100,
+      completed: 1200,
+      inprogress: 200,
+      earnings: "9K"
     },
     {
-      name: "Mar",
-      "Sales": 5000,
-    },
-  ];
-
-  export const userRows = [
-    {
-      id: 1,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      month: "Mar",
+      total_tasks: 1750,
+      completed: 1500,
+      inprogress: 350,
+      earnings: "18K"
     },
     {
-      id: 2,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      month: "Apr",
+      total_tasks: 800,
+      completed: 1080,
+      inprogress: 120,
+      earnings: "6K"
     },
     {
-      id: 3,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      month: "May",
+      total_tasks: 1900,
+      completed: 1700,
+      inprogress: 200,
+      earnings: "21K"
     },
     {
-      id: 4,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      month: "Jun",
+      total_tasks: 1300,
+      completed: 1500,
+      inprogress: 100,
+      earnings: "11K"
     },
     {
-      id: 5,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      month: "Jul",
+      total_tasks: 1150,
+      completed: 900,
+      inprogress: 350,
+      earnings: "9K"
     },
     {
-      id: 6,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      month: "Aug",
+      total_tasks: 700,
+      completed: 900,
+      inprogress: 150,
+      earnings: "5K"
     },
     {
-      id: 7,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      month: "Sep",
+      total_tasks: 800,
+      completed: 900,
+      inprogress: 100,
+      earnings: "15K"
     },
     {
-      id: 8,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      month: "Oct",
+      total_tasks: 1400,
+      completed: 1000,
+      inprogress: 400,
+      earnings: "13K"
     },
     {
-      id: 9,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      month: "Nov",
+      total_tasks: 1800,
+      completed: 1250,
+      inprogress: 450,
+      earnings: "20K"
     },
     {
-      id: 10,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-  ];
-
-  export const productRows = [
-    {
-      id: 1,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 2,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 3,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 4,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 5,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 6,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 7,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 8,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 9,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 10,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
+      month: "Dec",
+      total_tasks: 900,
+      completed: 1200,
+      inprogress: 200,
+      earnings: "7K"
     },
   ];
