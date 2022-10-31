@@ -6,9 +6,12 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 
-function User({setIsUserName, setUserName}) {
+function User({setIsUserName, userName, setUserName}) {
 
     const handleChange = () => {
+        if(userName === '') {
+            return
+        }
         setIsUserName(true)
     }
 

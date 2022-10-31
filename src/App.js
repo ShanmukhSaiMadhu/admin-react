@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       {
-        !isUsername ? <User setIsUserName= {setIsUserName} setUserName={setUserName} />
+        !isUsername ? <User userName={userName} setIsUserName= {setIsUserName} setUserName={setUserName} />
         :
         <>
           <Topbar userName={userName}/>
