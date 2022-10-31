@@ -1,9 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './styles.css'
-import {tasksData} from '../../data'
 import LineChart from '../Charts/LineChart';
 
-function CompareGraph() {
+function CompareGraph(newData) {
 
     const options = {
         plugins: {
@@ -21,11 +20,11 @@ function CompareGraph() {
       }
 
     const [chartData, setChartData] = useState({
-        labels: tasksData.map((item) => item.month),
+        labels: newData.newData.map((item) => item.month),
         datasets: [
           {
             label: "Tasks Created",
-            data: tasksData.map((item) => item.total_tasks),
+            data: newData.newData.map((item) => item.total_tasks),
             borderWidth: 2,
             fill: false,
             tension: 0.25,
@@ -35,7 +34,7 @@ function CompareGraph() {
           },
           {
             label: "Tasks Completed",
-            data: tasksData.map((item) => item.completed),
+            data: newData.newData.map((item) => item.completed),
             borderWidth: 2,
             fill: false,
             tension: 0.25,
@@ -45,6 +44,34 @@ function CompareGraph() {
           },
         ],
       })
+
+      useEffect(() => {
+        setChartData({
+          labels: newData.newData.map((item) => item.x),
+          datasets: [
+            {
+              label: "Tasks Created",
+              data: newData.newData.map((item) => item.total_tasks),
+              borderWidth: 2,
+              fill: false,
+              tension: 0.25,
+              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+              borderColor: 'rgba(255, 99, 132)',
+              pointRadius: 0,
+            },
+            {
+              label: "Tasks Completed",
+              data: newData.newData.map((item) => item.completed),
+              borderWidth: 2,
+              fill: false,
+              tension: 0.25,
+              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+              borderColor: 'blue',
+              pointRadius: 0,
+            },
+          ],
+        })
+      },[newData])
 
   return (
     <div className='compare-graph'>

@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
-import {tasksData} from '../../data'
+import React, {useState, useEffect} from 'react'
 import BarChart from '../Charts/BarChart';
 
-function CompletedChart() {
+function CompletedChart({newData}) {
+
+  console.log("completedData", newData)
 
     const options = {
         plugins: {
@@ -31,10 +32,10 @@ function CompletedChart() {
       }
 
     const [chartData, setChartData] = useState({
-        labels: tasksData.map((item) => item.month),
+        labels: newData.map((item) => item.x),
         datasets: [
           {
-            data: tasksData.map((item) => item.completed),
+            data: newData.map((item) => item.completed),
             borderWidth: 2,
             borderRadius: 5,
             fill: true,
@@ -45,6 +46,24 @@ function CompletedChart() {
           }
         ],
       })
+
+      useEffect(() => {
+        setChartData({
+          labels: newData.map((item) => item.x),
+          datasets: [
+            {
+              data: newData.map((item) => item.completed),
+              borderWidth: 2,
+              borderRadius: 5,
+              fill: true,
+              tension: 0.25,
+              backgroundColor: 'rgb(89,69,159, 0.2)',
+              borderColor: 'rgb(89,69,159, 0.6)',
+              pointRadius: 0,
+            }
+          ],
+        })
+      },[newData])
 
   return (
     <div>

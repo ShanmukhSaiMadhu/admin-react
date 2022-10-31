@@ -1,4 +1,4 @@
-.featured {
+/* .featured {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@
 
   .featured-title{
     font-size: 30px;
-}
+} */
 
 @media only screen and (max-width: 800px) {
     .featured {

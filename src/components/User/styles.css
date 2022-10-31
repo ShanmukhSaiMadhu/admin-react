@@ -1,0 +1,9 @@
+.user-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 100vh;
+    background: linear-gradient(to bottom, #67b26f, #4ca2cd);
+}
